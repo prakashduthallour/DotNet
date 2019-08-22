@@ -1,0 +1,14 @@
+﻿@media (min-width: 992px) {
+    .indexlabel {
+        width: 10%;
+    }
+}
+
+.indexlabel{
+    float:left;
+}
+
+select option{
+    border-radius:5px;
+}
+
