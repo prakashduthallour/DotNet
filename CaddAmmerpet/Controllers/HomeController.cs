@@ -9,7 +9,7 @@ namespace CaddAmmerpet.Controllers
 {
     public class HomeController : Controller
     {
-        StuInfo info = new StuInfo();
+      //  StuInfo info = new StuInfo();
         public ActionResult Index()
         {
           //  info.DataFlow();
