@@ -12,7 +12,7 @@ namespace CaddAmmerpet.Controllers
         StuInfo info = new StuInfo();
         public ActionResult Index()
         {
-            info.DataFlow();
+          //  info.DataFlow();
             return View();
         }
 
