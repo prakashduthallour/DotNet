@@ -13,27 +13,17 @@ namespace CaddAmmerpet.Controllers
       //  StuInfo info = new StuInfo();
         public ActionResult Index()
         {
-            LocalDBConnection dbCon = new LocalDBConnection();
-            dbCon.InsertData();
+          //  LocalDBConnection dbCon = new LocalDBConnection();
+           // dbCon.InsertData();
             return View();
         }
-
-        public ActionResult About()
+        public ActionResult Walkin()
         {
-            ViewBag.Message = "Your application description page.";
-
+            List<Dictionary<string, object>> walkinlist = new List<Dictionary<string, object>>();
+           
+             
             return View();
         }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-        public ActionResult Sample_View()
-        {
-            return View();
-        }
+       
     }
 }

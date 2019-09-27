@@ -1,11 +1,12 @@
 ﻿@media (min-width: 992px) {
     .indexlabel {
-        width: 10%;
+        width: 11%;
     }
 }
 
 .indexlabel{
     float:left;
+    font-weight:bold;
 }
 
 select option{
