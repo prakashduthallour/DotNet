@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using CaddAmmerpet.Models;
-using CaddAmmerpet.API_Configuration.LocalDB;
+
 
 namespace CaddAmmerpet.Controllers
 {
@@ -13,8 +13,7 @@ namespace CaddAmmerpet.Controllers
       //  StuInfo info = new StuInfo();
         public ActionResult Index()
         {
-          //  LocalDBConnection dbCon = new LocalDBConnection();
-           // dbCon.InsertData();
+         
             return View();
         }
         public ActionResult Walkin()
