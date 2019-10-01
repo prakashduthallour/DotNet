@@ -1,0 +1,120 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-lg-12">
+        <h1 style="text-align:center">Student Enquiry</h1>
+    </div>
+</div>
+
+
+<div class="row">
+   <span class="indexlabel" style="font-weight:bold">
+       Student Name
+    </span>
+    <div class="col-md-4">
+        <input type="text" class="form-control" id="stuname" name="stuname" placeholder="Enter student name..." />
+    </div>
+    <div class="indexlabel">
+        <label for="stuphone">Phone/Mobile</label>
+    </div>
+    <div class="col-md-4">
+        <input type="number" maxlength="10" class="form-control" id="stuphone" name="stuphone" placeholder="Enter mobile number..." />
+    </div>
+</div>
+<div class="row">
+
+    <div class="indexlabel">
+        <label for="stuemail">Email Id</label>
+    </div>
+    <div class="col-md-4">
+        <input type="email" maxlength="10" class="form-control" id="stuemail" name="stuemail" placeholder="Enter email id..." />
+    </div>
+    <div class="indexlabel">
+        <label for="walkintype">Walkin Type</label>
+    </div>
+    <div class="col-md-4">
+        <select id="walkintype" name="walkintype" class="form-control">
+            <option>--Seelct walkin type--</option>
+            <option>Telephonic</option>
+            <option>Facebook</option>
+            <option>Google</option>
+            <option>Direct</option>
+        </select>
+    </div>
+</div>
+<div class="row">
+
+    <div class="indexlabel">
+        <label for="stuemail">Adress</label>
+    </div>
+    <div class="col-md-10">
+        <textarea placeholder="Enter adress.." style="max-width:693px;" class="form-control"></textarea>
+    </div>
+
+</div>
+<div class="row">
+
+    <div class="indexlabel">
+        <label for="stuqual">Qualification</label>
+    </div>
+    <div class="col-md-4">
+        <select id="stuqual" name="stuqual" class="form-control">
+            <option>--Select Qualification--</option>
+            <option>Diploma</option>
+            <option>B.E/B.Tech</option>
+            <option>M.E/M.Tech</option>
+            <option>Others</option>
+        </select>
+    </div>
+    <div class="indexlabel">
+        <label for="walkintype">Status</label>
+    </div>
+    <div class="col-md-4">
+        <input type="radio" name="joiningtype" id="joiningtype" />
+        <label for="joining">Joining</label>
+        <input type="radio" name="joiningtype" id="joiningtype" />
+        <label for="enquiry">Enquiry</label>
+    </div>
+</div>
+<div class="row">
+    <span class="indexlabel">
+        Course
+        @*<label for="stucourseoffered">Course</label>*@
+    </span>
+    <div class="col-md-3">
+        <select id="stucoursetype" name="stucoursetype" class="form-control" size="4">
+            <option>Diploma</option>
+            <option>Professional Diploma</option>
+            <option>Single</option>
+        </select>
+    </div>
+    <div class="col-md-3">
+        <select id="stucourse" name="stucourse" class="form-control" multiple size="4">
+            <option>Civil</option>
+            <option>Mech</option>
+            <option>ECE</option>
+            <option>EEE</option>
+        </select>
+    </div>
+    <div class="col-md-3">
+        <select id="stucourse" name="stucourse" class="form-control" multiple size="4">
+            <option>Auto Cadd</option>
+            <option>Primavera</option>
+            <option>3dx Max</option>
+            <option>4dx Max</option>
+        </select>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <button class="stuenquirysubmit">Submit</button>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+<script type="text/javascript">
+
+</script>

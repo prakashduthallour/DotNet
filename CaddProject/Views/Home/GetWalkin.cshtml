@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Walkin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+   
+}
+@model CaddProject.Models.Walkin
+
+<h2>Walkin</h2>
+
+<div class="body-content">
+    <div class="row">
+        <span>Id</span>
+        <input type="text" class="inputtypetext" name="model.Id" id="Id" readonly="readonly" style="background-color:bisque" value="3" />
+        <span>Name</span>
+        <input type="text" class="inputtypetext" name="model.Name" id="Name" placeholder="Enter Name" value="@Model.Name"/>
+        <input type="submit"  class="inputtypetext" />
+    </div>
+</div>
+
+<table class="table">
+   
+    <thead>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+            </tr>
+        </thead>
+        <tbody>
+            @if(Model.walkinList.Count>0)
+            {
+                foreach(var item in Model.walkinList)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                    </tr>
+                }
+            }
+            
+        </tbody>
+</table>
+<script type="text/javascript">
+
+    function submitForm() {
+        debugger;
+        $.post("/Home/PostWalkin")
+    }
+</script>
